@@ -239,7 +239,7 @@
 
 % Font configuration using PragmataPro fonts
 
-\\setmainfont{PragmataProR_liga_0830.otf}[[
+\\setmainfont{PragmataProR_liga_0830.otf}[
   Path = /home/strmvlt/.fonts/,
   Extension = .otf,
   UprightFont = PragmataProMonoLiga-Regular

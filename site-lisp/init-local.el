@@ -4,9 +4,20 @@
 ;;; Code:
 
 (add-to-list 'load-path (expand-file-name "user-lisp" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "github.com/ncouture/org-timeblock.git" user-emacs-directory))
+;; (require 'org-timeblock)
+;; (org-timeblock)
+(require-package 'ligature-pragmatapro)
+(require-package 'company)
+(require-package 'ivy)
+
+(ligature-pragmatapro-setup)
+(global-ligature-mode)
+(global-company-mode)
+(ivy-mode)
+
+;;(require 'ivy-overlay)
 ;; (require 'typo)
-;; (require-package 'company)
-;; (global-company-mode)
 ;; (typo-global-mode)
 ;; (require 'init-pragmatapro)
 (require 'init-gptel)

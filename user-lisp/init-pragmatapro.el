@@ -1,3 +1,8 @@
+(require-package 'ligature-pragmatapro)
+(ligature-pragmatapro-setup)
+(global-ligature-mode)
+
+
 ;;; package --- setup fonts -*- lexical-binding: 't -*-
 ;;; Commentary:
 ;;; foo bar
@@ -11,6 +16,7 @@
 
 ;;; TODO: Increase table size to support non-ascii characters,
 ;;;       and test performance.
+
 
 (eval-when-compile (defconst pragmatapro-lig-alist
                      '(("[INFO]"    #XE2B1)
