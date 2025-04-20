@@ -1,0 +1,6 @@
+[submodule "site-lisp/mcp.el"]
+	path = site-lisp/mcp.el
+	url = https://github.com/lizqwerscott/mcp.el
+[submodule "github.com/lizqwerscott/mcp.el"]
+	path = github.com/lizqwerscott/mcp.el
+	url = https://github.com/lizqwerscott/mcp.el

@@ -1,0 +1,1 @@
+/home/strmvlt/.emacs.d/site-lisp/../github.com/lizqwerscott/mcp.el/
