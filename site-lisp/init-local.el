@@ -2,28 +2,42 @@
 ;;; Commentary:
 ;;; https://github.com/purcell/emacs.d/?tab=readme-ov-file#changing-themes-and-adding-your-own-customization
 ;;; Code:
+(require-package 'ef-themes)
+(require 'ef-themes)
+(load-theme 'ef-duo-dark)
 
+
+(require 'ivy-overlay)
 (add-to-list 'load-path (expand-file-name "user-lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "github.com/ncouture/org-timeblock.git" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "github.com/lizqwerscott/mcp.el" user-emacs-directory))
 ;; (require 'org-timeblock)
 ;; (org-timeblock)
 (require-package 'ligature-pragmatapro)
-(require-package 'company)
-(require-package 'ivy)
 
+(require-package 'ivy)
+(require-package 'smex)
 (ligature-pragmatapro-setup)
 (global-ligature-mode)
 (global-company-mode)
+(company-complete)
+(company-css 't)
+(require-package 'company-html)
 (ivy-mode)
-
-;;(require 'ivy-overlay)
-;; (require 'typo)
-;; (typo-global-mode)
-;; (require 'init-pragmatapro)
+(ivy-overlay)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; Optional: bind old M-x as fallback
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; (require 'init-pragmatapro);;;
 (require 'init-gptel)
 (require 'init-javascript-extras)
 (require 'init-org-pdf-theme)
 (require 'init-pass)
+(require 'init-utilities)
+
+
 ;;(require 'init-github-copilot)
 ;;(require 'init-python-tools)
 ;;(require 'init-spelling-tools)
