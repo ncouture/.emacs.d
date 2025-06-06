@@ -2,12 +2,14 @@
 ;;; Commentary:
 ;;; https://github.com/purcell/emacs.d/?tab=readme-ov-file#changing-themes-and-adding-your-own-customization
 ;;; Code:
+(with-eval-after-load 'projectile
+  ;; (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-commander))
+
 (require-package 'ef-themes)
 (require 'ef-themes)
 (load-theme 'ef-duo-dark)
 
-
-(require 'ivy-overlay)
 (add-to-list 'load-path (expand-file-name "user-lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "github.com/ncouture/org-timeblock.git" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "github.com/lizqwerscott/mcp.el" user-emacs-directory))
@@ -22,9 +24,8 @@
 (global-company-mode)
 (company-complete)
 (company-css 't)
-(require-package 'company-html)
-(ivy-mode)
-(ivy-overlay)
+;; (ivy-mode)
+;; (ivy-overlay)
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
@@ -44,6 +45,9 @@
 ;;(require 'init-keybindings)
 ;;(require 'init-utilities)
 ;;(require 'init-navigation)
+;; used by nikola
+(require-package 'htmlize)
+(require 'htmlize)
 
 (provide 'init-local)
 ;;; init-local.el ends here

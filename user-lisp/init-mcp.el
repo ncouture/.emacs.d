@@ -17,17 +17,27 @@
     ;; Read the first Lisp expression from the buffer
     (read (current-buffer))))
 
+(setq twilio-mcp-auth
+      (format "%s"
+              (read-value-from-file
+               (expand-file-name
+                "~/.ssh/twilip-mcp.txt"))))
 
 (setq mcp-hub-servers
       `(("firebase" . (:command "npx" :args ("-y" "firebase-tools@latest" "experimental:mcp")))
         ("twilio" . (:command "npx" :args
                               ("-y"
                                "@twilio-alpha/mcp"
-                               "AC59affb98762847119d271b39a457f5e0/SK8d3b5eff0c9e9045b3184bf330093978:CszcUTvgof7J1jLeNzZ7uLxszl4iuaI3"
-                               ;; "--services"
-                               ;; "twilio_accounts_v1")))
-                               ("filesystem" . (:command "npx" :args ("-y" "@modelcontextprotocol/server-filesystem" "/home/strmvlt/git/reparationbeton.com/functions")))
-                               ("fetch" . (:command "uvx" :args ("mcp-server-fetch"))))))))
+                               "expetimental/mcp"
+                               twilio-mcp-auth)))))
+                              ;; "--services"
+                              ;; "twilio_accounts_v1")))
+                              ;; ("filesystem" .
+                              ;;  (:command "npx" :args
+                              ;;            ("-y"
+                              ;;             "@model contextprotocol/server-filesystem"
+                              ;;             "/home/strmvlt/git/reparationbeton_web/functions")))
+                              ;; ("fetch" . (:command "uvx" :args ("mcp-server-fetch")))))))
 
 
 (add-hook 'after-init-hook

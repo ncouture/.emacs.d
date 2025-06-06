@@ -195,12 +195,11 @@
         :key anthropic-api-key))
 
 
-
-(require-package 'gptel-aibo)
-(use-package gptel-aibo
-  :after (prog-mode flycheck)
-  :config
-  (define-key prog-mode-map (kbd "C-i") #'gptel-aibo-summon))
+;; (require-package 'gptel-aibo)
+;; (use-package gptel-aibo
+;;   :after (prog-mode flycheck)
+;;   :config
+;;   (define-key prog-mode-map (kbd "C-i") #'gptel-aibo-summon))
 
 ;; (use-package gptel-aibo
 ;;   :after (gptel)
@@ -223,7 +222,7 @@
 ;;               gptel-backend 'gptel-anthropic
 ;;               gptel-display-buffer-action '(pop-to-buffer-same-window))
 
-(global-set-key (kbd "C-c RET") 'gptel-send)
-(global-set-key (kbd "C-c /") 'gptel-fn-complete)
+;; (global-set-key (kbd "C-c RET") 'gptel-send)
+;; (global-set-key (kbd "C-c /") 'gptel-fn-complete)
 (provide 'init-gptel)
 ;;; init-gptel.el ends here.

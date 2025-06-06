@@ -1,0 +1,12 @@
+[debug] [2025-06-01T07:24:34.799Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-01T07:24:34.801Z] > authorizing via signed-in user (nicolas@stormvault.net)
+[debug] [2025-06-01T08:37:42.819Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-01T08:37:42.821Z] > authorizing via signed-in user (nicolas@stormvault.net)
+[debug] [2025-06-01T08:38:09.098Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-01T08:38:09.100Z] > authorizing via signed-in user (nicolas@stormvault.net)
+[debug] [2025-06-02T13:45:32.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-02T13:45:32.490Z] > authorizing via signed-in user (nicolas@stormvault.net)
+[debug] [2025-06-02T13:47:12.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-02T13:47:12.436Z] > authorizing via signed-in user (nicolas@stormvault.net)
+[debug] [2025-06-02T13:49:40.380Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-02T13:49:40.382Z] > authorizing via signed-in user (nicolas@stormvault.net)
