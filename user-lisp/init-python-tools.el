@@ -49,11 +49,11 @@
 ;; ;;    (python . t)
 ;; ;;    (jupyter . t)))
 
-(when (maybe-require-package 'flymake-ruff)
-  (defun sanityinc/flymake-ruff-maybe-enable ()
-    (when (executable-find "ruff")
-      (flymake-ruff-load)))
-  (add-hook 'python-mode-hook 'sanityinc/flymake-ruff-maybe-enable))
+;; (when (maybe-require-package 'flymake-ruff)
+;;   (defun sanityinc/flymake-ruff-maybe-enable ()
+;;     (when (executable-find "ruff")
+;;       (flymake-ruff-load)))
+;;   (add-hook 'python-mode-hook 'sanityinc/flymake-ruff-maybe-enable))
 
 ;;; TODO: save-buffer hooks before write files run isort etc.
 
